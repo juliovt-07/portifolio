@@ -20,7 +20,7 @@ export default {}
   gap: 10px;
   margin-top: 60px;
   flex-wrap: wrap;
-
+  cursor: none;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 
@@ -31,6 +31,7 @@ export default {}
 }
 .phrase-bio h1, bio {
   color: var(--light);
+  cursor: none;
 }
 .phrase-bio h1:nth-child(1) {
   font-size: 36px;
@@ -44,24 +45,26 @@ export default {}
   font-size: 34px;
   transform: translateY(2px);
 }
-.phrase-bio h1:nth-child(2) {
+.phrase-bio h1 {
   position: relative;
 }
 
-.phrase-bio h1:nth-child(2)::before {
+.phrase-bio h1::before {
   content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--h1);
+  background-color: var(--light);
   transform-origin: center;
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
-
-.phrase-bio h1:nth-child(2):hover::before {
+h1:nth-child(2)::before {
+  background-color: var(--h1)
+}
+.phrase-bio h1:hover::before {
   transform: translate(-50%, 0) scaleX(1);
 }
 .bio {
@@ -105,49 +108,5 @@ export default {}
     font-size: 25px;
     text-align: left;
   }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-.delay-1 {
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.delay-02 {
-  -moz-animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.delay-04 {
-  -moz-animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.delay-06 {
-  -moz-animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
 }
 </style>

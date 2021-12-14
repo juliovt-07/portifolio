@@ -7,7 +7,7 @@
       </svg>
       <h3>UI Designer</h3>
       <div class="list flex-column align-center">
-        <p class="pointer" v-for="(item, index) in ui" :key="index">- {{ item }} -</p>
+        <p class="pointer" v-for="(item, index) in ui" :key="index">- {{ item.label }} -</p>
       </div>
     </div>
     <div class="line"/>
@@ -17,7 +17,7 @@
       </svg>
       <h3>Front-end</h3>
       <div class="list flex-column align-center">
-        <p class="pointer" v-for="(item, index) in front" :key="index">- {{ item }} -</p>
+        <p class="pointer" v-for="(item, index) in front" :key="index">- {{ item.label }} -</p>
       </div>
     </div>
   </div>
@@ -28,10 +28,22 @@ export default {
   data() {
     return {
       ui: [
-        'Figma', 'Framer', 'Adobe Xd', 'Iconify', 'Wireframe', 'Design Thinking', 'Style Guide'
+        { label: 'Figma', link: '' },
+        { label: 'Framer', link: '' },
+        { label: 'Adobe Xd', link: '' },
+        { label: 'Iconify', link: '' },
+        { label: 'Wireframe', link: '' },
+        { label: 'Design Thinking', link: '' },
+        { label: 'Style Guide', link: '' }
       ],
       front: [
-        'Vue', 'Vuex', 'Vuetify', 'Nuxt', 'Sass', 'Bootstrap', 'Axios'
+        { label: 'Vue', link: '' },
+        { label: 'Vuex', link: '' },
+        { label: 'Vuetify', link: '' },
+        { label: 'Nuxt', link: '' },
+        { label: 'Sass', link: '' },
+        { label: 'Bootstrap', link: '' },
+        { label: 'Axios', link: '' }
       ]
     }
   }
@@ -49,6 +61,16 @@ export default {
   border: solid 1px var(--skills-border);
   border-radius: 16px;
   overflow: hidden;
+
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .skills h3 {
   color: var(--h1);

@@ -40,7 +40,7 @@ export default {
   transition: all .5s ease-in-out;
 }
 .companies-logos:hover > .company img {
-  filter: blur(3px);
+  filter: blur(2px);
 }
 .companies-logos .company img:hover {
   filter: blur(0px);
