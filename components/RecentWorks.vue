@@ -35,10 +35,6 @@ export default {
   transform: translateY(-70px);
   gap: 7px;
 }
-.projects .subtitle {
-  text-align: center;
-  max-width: 90%;
-}
 .projects label {
   color: var(--primary);
   font-weight: 600;

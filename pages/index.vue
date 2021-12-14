@@ -6,6 +6,7 @@
     </header>
     <Skills/>
     <RecentWorks/>
+    <Companies/>
   </div>
 </template>
 
