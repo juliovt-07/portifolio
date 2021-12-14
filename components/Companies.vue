@@ -25,13 +25,14 @@ export default {
 <style>
 .companies {
   gap: 7px;
+  transform: translateY(35px);
 }
 .companies h3 {
   max-width: 600px;
   text-align: center;
 }
 .companies-logos {
-  margin-top: 40px;
+  margin-top: 20px;
   gap: 40px;
   flex-wrap: wrap;
 }

@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'JULIO',
+    title: 'SOU O JULIO',
     htmlAttrs: {
       lang: 'pt-br'
     },
