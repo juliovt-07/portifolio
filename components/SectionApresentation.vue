@@ -6,7 +6,7 @@
       <h1 class="delay-06"> Prazer em te conhecer.</h1>
     </div>
     <div class="bio fadeIn delay-1">
-      eu su u milior si naum pensarmos assim, u ser umano, si vuce naum pensar ki na sua profissaum vuze é u milior.
+      Um Desenvolvedor aventureiro no mundo do UI/UX, e entusiasmado por Interfaces agradáveis aos olhos e consoles.
     </div>
   </div>
 </template>
