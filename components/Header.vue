@@ -42,6 +42,7 @@ export default {
       }
       document.querySelector('.invisible').classList.remove('invisible')
       document.querySelector('.'+svg).classList.add('invisible')
+      this.$emit('update-mode', mode[1])
     }
   }
 }

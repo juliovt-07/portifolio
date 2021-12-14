@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <Header/>
+      <Header @update-mode="updateMode($event)"/>
       <SectionApresentation/>      
     </header>
     <Skills/>
@@ -9,13 +9,31 @@
     <Companies/>
     <footer class="flex-column align-center">
       <Banner/>
-      <Footer/>
+      <Footer :mode="mode"/>
     </footer>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      mode: null
+    }
+  },
+  mounted() {
+    if (!this.mode) {
+      this.mode = this.$store.state.mode
+      console.log(this.mode)
+    }
+  },
+  methods: {
+    updateMode(event) {
+      console.log(event)
+      this.mode = event
+    }
+  }
+}
 </script>
 
 <style>

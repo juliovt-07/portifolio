@@ -37,7 +37,7 @@ export default {
     transition: background .3s ease-in-out;
 }
 .btn:hover {
-	color: var(--light);
+	color: var(--header-bg);
 	background-position: 0;
 }
 .banner .btn {
