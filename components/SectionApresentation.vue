@@ -6,7 +6,7 @@
       <h1 class="delay-06"> Prazer em te conhecer.</h1>
     </div>
     <div class="bio fadeIn delay-1">
-      Um Desenvolvedor aventureiro no mundo do UI/UX, e entusiasmado por Interfaces agradáveis aos olhos e consoles.
+      Um Desenvolvedor aventureiro no mundo do <span>UI/UX</span>, e entusiasmado por criar o mais agradável aos olhos e consoles.
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {}
   gap: 10px;
   margin-top: 60px;
   flex-wrap: wrap;
-  cursor: none;
+  cursor: default;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 
@@ -31,7 +31,7 @@ export default {}
 }
 .phrase-bio h1, bio {
   color: var(--light);
-  cursor: none;
+  cursor: default;
 }
 .phrase-bio h1:nth-child(1) {
   font-size: 36px;
@@ -78,6 +78,7 @@ h1:nth-child(2)::before {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  cursor: default;
 }
 .light .bio {
   font-weight: 200;
@@ -108,5 +109,28 @@ h1:nth-child(2)::before {
     font-size: 25px;
     text-align: left;
   }
+}
+span {
+  position: relative;
+  z-index: 1;
+}
+
+span::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: var(--social-media);
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+}
+
+span:hover::before {
+  transform: scaleY(1);
+  background-color: var(--social-media);
 }
 </style>
