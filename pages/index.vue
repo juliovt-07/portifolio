@@ -7,6 +7,9 @@
     <Skills/>
     <RecentWorks/>
     <Companies/>
+    <footer>    
+      <Footer/>
+    </footer>
   </div>
 </template>
 

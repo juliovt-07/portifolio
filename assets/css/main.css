@@ -34,13 +34,6 @@
   transition: all .2s ease;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-}
-
-.phrase-footer {
-  font-family: 'Inria Sans', sans-serif;
-}
 .content {
   min-height: 100vh;
   background-color: var(--bg);
@@ -65,6 +58,9 @@ body {
 }
 .justify-around {
   justify-content: space-around;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .align-center {
   align-items: center;

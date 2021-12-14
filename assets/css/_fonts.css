@@ -1,10 +1,19 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.phrase-footer {
+  font-family: 'Inria Sans', sans-serif;
+  color: var(--light);
+  opacity: .75;
+}
 h3 {
 	font-size: 24px;
  	font-weight: 800;
 }
 p {
 	font-size: 15px;
-  	font-weight: 500;
+  font-weight: 500;
 }
 .subtitle {
   text-align: center;
