@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header>
+    <header id="home">
       <Header @update-mode="updateMode($event)"/>
       <SectionApresentation/>      
     </header>

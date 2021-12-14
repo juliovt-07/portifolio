@@ -6,7 +6,7 @@
       <h1 class="delay-06"> Prazer em te conhecer.</h1>
     </div>
     <div class="bio fadeIn delay-1">
-      Um Desenvolvedor aventureiro no mundo do <span>UI/UX</span>, e entusiasmado por criar o mais agradável aos olhos e consoles.
+      Um Desenvolvedor aventureiro no mundo <span>UI/UX</span>, e entusiasmado por criar o mais agradável aos olhos e consoles.
     </div>
   </div>
 </template>

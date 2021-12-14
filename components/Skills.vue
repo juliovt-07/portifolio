@@ -75,6 +75,7 @@ export default {
 .skills h3 {
   color: var(--h1);
   margin-top: 20px;
+  cursor: default;
 }
 .skills .list {
   margin-top: 40px;

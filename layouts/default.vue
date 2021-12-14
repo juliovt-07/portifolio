@@ -1,6 +1,12 @@
 <template>
   <div>
     <Nuxt v-show="mode" class="content"/>
+    <a href="#home">
+      <svg class="to-up" v-show="mode" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.1862 40.0971L34.133 26.1503L48.0798 40.0971" stroke-opacity="0.75" stroke-width="3.4867" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="34.5" cy="34.5" r="33.766" stroke-opacity="0.75" stroke-width="1.46809"/>
+      </svg>
+    </a>
     <div v-show="screenSelectMode" class="select-mode flex pointer">
       <div @click="selectMode('dark')" class="select-dark flex-column justify-center align-center">
         <svg class="moon pointer" :width="svg" :height="svg" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,6 +71,21 @@ export default {
 </script>
 
 <style>
+.to-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  stroke: var(--secondary);
+  opacity: .5;
+  transition: all .2s ease-in-out;
+}
+.to-up:hover {
+  opacity: .9;
+}
+.dark ~ .to-up {
+  stroke: var(--primary);
+}
 .select-mode {
   position: absolute;
   width: 100%;
