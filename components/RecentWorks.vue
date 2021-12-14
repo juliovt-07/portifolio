@@ -6,9 +6,11 @@
       <label class="pointer">Me mande um e-mail</label>
     </p>
     <div class="projects-cards flex">
-      <div class="project flex-column align-center" v-for="(project, index) in projects" :key="index">
-        <div class="card"></div>
-        <h4>{{ project }}</h4>
+      <div class="pointer project flex-column align-center" v-for="(project, index) in projects" :key="index">
+        <div class="card">
+          <img :src="`/${project.img}.webp`">
+        </div>
+        <h4>{{ project.title }}</h4>
       </div>
     </div>
   </div>
@@ -18,7 +20,11 @@
 export default {
   data() {
     return {
-      projects: ['Aggio Delivery', 'Grupo Topázio', 'Casa do Rolamento']
+      projects: [
+        { img: 'aggio-delivery', title: 'Aggio Delivery' },
+        { img: 'grupo-topazio', title: 'Grupo Topázio' },
+        { img: 'casa-do-rolamento', title: 'Casa do Rolamento' }
+      ]
     }
   }
 }
@@ -70,10 +76,27 @@ export default {
   gap: 10px;
 }
 .projects-cards .card {
-  width: 314.23px;
-  height: 220.29px;
+  position: relative;
+  overflow: hidden;
+  width: 314px;
+  height: 220px;
   background-color: var(--darker);
   border-radius: 16px;
   box-shadow: 2px 2px 6.70946px rgba(0, 0, 0, 0.39);
+}
+.projects-cards .card img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 5s ease-in-out;
+}
+.projects-cards .project:nth-child(1):hover > .card img {
+  top: -558px;
+}
+.projects-cards .project:nth-child(2):hover > .card img {
+  top: -362px;
+}
+.projects-cards .project:nth-child(3):hover > .card img {
+  top: -610px;
 }
 </style>
