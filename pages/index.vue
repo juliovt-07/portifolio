@@ -7,7 +7,8 @@
     <Skills/>
     <RecentWorks/>
     <Companies/>
-    <footer>    
+    <footer class="flex-column align-center">
+      <Banner/>
       <Footer/>
     </footer>
   </div>

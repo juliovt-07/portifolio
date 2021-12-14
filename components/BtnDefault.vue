@@ -40,4 +40,18 @@ export default {
 	color: var(--light);
 	background-position: 0;
 }
+.banner .btn {
+	border: solid 2px var(--light);
+	color: var(--light);
+    background: var(--secondary);
+    background-image: linear-gradient(45deg, var(--light) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    padding: 15px 35px;
+}
+.banner .btn:hover {
+	color: var(--secondary);
+	background-position: 0;
+
+}
 </style>
