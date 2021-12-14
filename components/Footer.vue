@@ -79,6 +79,14 @@ export default {
 }
 .footer .social-media svg {
   cursor: pointer;
+  opacity: .8;
+  transition: all .2s ease;
+}
+.footer .social-media svg:hover {
+  opacity: 1;
+}
+.footer .social-media svg:hover > path {
+  box-shadow: 0px 0px 15px rgba(64, 183, 130, 1);  
 }
 .footer .copyright {
   font-weight: 200;
