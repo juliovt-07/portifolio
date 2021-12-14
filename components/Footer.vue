@@ -86,7 +86,7 @@ export default {
   opacity: 1;
 }
 .footer .social-media svg:hover > path {
-  box-shadow: 0px 0px 15px rgba(64, 183, 130, 1);  
+  box-shadow: 0px 0px 15px var(--social-media);  
 }
 .footer .copyright {
   font-weight: 200;

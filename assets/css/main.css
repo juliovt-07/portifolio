@@ -18,6 +18,7 @@
   --btn-header: var(--primary);
   --skills-border: rgba(64, 183, 130, 0.31);
   --h1: var(--primary);
+  --social-media: var(--primary);
 }
 .light {
   --bg:  var(--light);
@@ -26,6 +27,8 @@
   --btn-header: var(--secondary);
   --skills-border: rgba(81, 81, 81, 0.25);
   --h1: var(--secondary);
+  --social-media: var(--light);
+
 }
 
 * {

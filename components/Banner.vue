@@ -24,6 +24,7 @@ export default {
   border-radius: 16px;
   flex-wrap: wrap;
   padding: 0px 20px;
+  color: var(--light)
 }
 .banner h1 {
   text-align: center;
