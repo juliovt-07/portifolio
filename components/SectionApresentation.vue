@@ -68,7 +68,7 @@ h1:nth-child(2)::before {
   transform: translate(-50%, 0) scaleX(1);
 }
 .bio {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 30px;
   text-align: center;
   width: 95%;
@@ -81,7 +81,7 @@ h1:nth-child(2)::before {
   cursor: default;
 }
 .light .bio {
-  font-weight: 200;
+  font-weight: 300;
 }
 @media screen and (max-width: 397px) {
   .phrase-bio {
