@@ -82,6 +82,14 @@ export default {
   gap: 5px;
   opacity: .8;
 }
+.skills h3, .skills .list p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .skills .list p {
   position: relative;
   z-index: 1;

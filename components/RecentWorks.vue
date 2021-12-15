@@ -3,7 +3,9 @@
     <h3>Projetos Recentes</h3>
     <p class="subtitle">
       Aqui estão alguns projetos em que trabalhei recentemente. Quer ver mais?
-      <label class="pointer">Me mande um e-mail</label>
+      <label class="pointer">
+        <a href="mailto:email@example.com">Me mande um e-mail</a>
+      </label>
     </p>
     <div class="projects-cards flex">
       <div class="pointer project flex-column align-center" v-for="(project, index) in projects" :key="index">
@@ -37,13 +39,13 @@ export default {
   transform: translateY(-70px);
   gap: 7px;
 }
-.projects label {
+.projects label a{
   color: var(--primary);
   font-weight: 600;
   position: relative;
   padding: 6px 0;
 }
-.projects label::before, .projects label::after {
+.projects label a::before, .projects label a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -54,13 +56,13 @@ export default {
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
-.projects label::before {
+.projects label a::before {
   top: 0;
 }
-.projects label::after {
+.projects label a::after {
   bottom: 0;
 }
-.projects label:hover::before, .projects label:hover::after {
+.projects label a:hover::before, .projects label a:hover::after {
   transform-origin: center left;
   transform: scaleX(1);
 }
