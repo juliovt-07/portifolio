@@ -8,7 +8,9 @@
     <div class="projects-cards flex">
       <div class="pointer project flex-column align-center" v-for="(project, index) in projects" :key="index">
         <div class="card">
-          <img :src="`/${project.img}.webp`">
+          <a :href="project.link" target="_blank">          
+            <img :src="`/${project.img}.webp`">
+          </a>
         </div>
         <h4>{{ project.title }}</h4>
       </div>
@@ -21,9 +23,9 @@ export default {
   data() {
     return {
       projects: [
-        { img: 'aggio-delivery', title: 'Aggio Delivery' },
-        { img: 'grupo-topazio', title: 'Grupo Topázio' },
-        { img: 'casa-do-rolamento', title: 'Casa do Rolamento' }
+        { img: 'aggio-delivery', title: 'Aggio Delivery', link: 'https://aggio.app/' },
+        { img: 'grupo-topazio', title: 'Grupo Topázio', link: 'https://www.grupotopazio.com/' },
+        { img: 'casa-do-rolamento', title: 'Casa do Rolamento', link: 'https://casadorolamentoimp.com.br/' }
       ]
     }
   }
