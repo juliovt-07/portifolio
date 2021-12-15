@@ -23,14 +23,14 @@ export default {
       {
         hid: "og:description",
         property: "og:description",
-        content: "Portifólio do Desenvolvedor Web Júlio César.",
+        content: "Um Desenvolvedor aventureiro no mundo UI/UX, e entusiasmado por criar o mais agradável aos olhos e consoles.",
       },
       {
         hid: "og:image",
         property: "og:image",
         content: "/logo.png",
       },
-      { hid: 'description', name: 'description', content: 'Portifólio do Desenvolvedor Web Júlio César.' },
+      { hid: 'description', name: 'description', content: 'Um Desenvolvedor aventureiro no mundo UI/UX, e entusiasmado por criar o mais agradável aos olhos e consoles.' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'author', content: 'Julio Cesar' },
       { name: 'copyright', content: '© 2021 Julio Cesar' },
