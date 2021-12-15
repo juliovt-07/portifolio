@@ -1,6 +1,8 @@
 <template>
 	<div class="btn pointer">
-		{{ title }}
+		<a href="https://wa.me/5599984738118?text=Ol%C3%A1%2C+cheguei+at%C3%A9+aqui+atrav%C3%A9s+do+seu+Site%2C+Gostaria+de+falar+sobre+um+projeto." target="_blank">		
+			{{ title }}
+		</a>
 	</div>
 </template>
 
@@ -36,7 +38,10 @@ export default {
     -webkit-transition: background 300ms ease-in-out;
     transition: background .3s ease-in-out;
 }
-.btn:hover {
+.btn a {
+	color: var(--btn-header);	
+}
+.btn:hover, .btn:hover a {
 	color: var(--header-bg);
 	background-position: 0;
 }
@@ -49,9 +54,14 @@ export default {
     background-size: 400%;
     padding: 15px 35px;
 }
+.banner .btn a {
+	color: var(--light);	
+}
 .banner .btn:hover {
 	color: var(--secondary);
 	background-position: 0;
-
+}
+.banner .btn:hover a {
+	color: var(--secondary);
 }
 </style>

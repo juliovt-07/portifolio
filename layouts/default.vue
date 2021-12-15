@@ -77,11 +77,11 @@ export default {
   right: 30px;
   cursor: pointer;
   stroke: var(--secondary);
-  opacity: .5;
+  opacity: .4;
   transition: all .2s ease-in-out;
 }
 .to-up:hover {
-  opacity: .9;
+  opacity: .8;
 }
 .dark ~ .to-up {
   stroke: var(--primary);
