@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      companies: ['aggio', 'decole', 'inbolso', 'hubvet']
+      companies: ['aggio', 'decole', 'inbolso', 'hubvet', 'overdrive']
     }
   }
 }
@@ -25,14 +25,14 @@ export default {
 <style>
 .companies {
   gap: 7px;
-  transform: translateY(35px);
+  transform: translateY(60px);
 }
 .companies h3 {
   max-width: 600px;
   text-align: center;
 }
 .companies-logos {
-  margin-top: 20px;
+  margin-top: 40px;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -41,14 +41,9 @@ export default {
   transition: all .5s ease-in-out;
 }
 .companies-logos:hover > .company img {
-  filter: blur(2px);
+  filter: grayscale(100%);
 }
 .companies-logos .company img:hover {
-  filter: blur(0px);
-}
-@media screen and (max-width: 834px) {
-  .companies-logos .company:nth-child(4) {
-    display: none;
-  }
+  filter: grayscale(0%);
 }
 </style>
