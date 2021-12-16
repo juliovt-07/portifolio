@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nuxt v-show="mode" class="content"/>
-    <a href="#home">
+    <a href="#home" v-show="scrollY > 500" class="delay-06">
       <svg class="to-up" v-show="mode" width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.1862 40.0971L34.133 26.1503L48.0798 40.0971" stroke-opacity="0.75" stroke-width="3.4867" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="34.5" cy="34.5" r="33.766" stroke-opacity="0.75" stroke-width="1.46809"/>
@@ -40,7 +40,8 @@ export default {
     return {
       mode: null,
       screenSelectMode: false,
-      svg: 55
+      svg: 55,
+      scrollY: 0
     }
   },
   mounted() {
@@ -49,6 +50,9 @@ export default {
     } else {
       this.screenSelectMode = true
     }
+    window.addEventListener('scroll',(event) => {
+      this.scrollY = window.scrollY
+    });
   },
   computed: {
     modeLocal() {
@@ -79,6 +83,14 @@ export default {
   stroke: var(--secondary);
   opacity: .4;
   transition: all .2s ease-in-out;
+
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 .to-up:hover {
   opacity: .8;

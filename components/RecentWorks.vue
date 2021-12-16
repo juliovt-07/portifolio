@@ -4,7 +4,7 @@
     <p class="subtitle">
       Aqui estão alguns projetos em que trabalhei recentemente. Quer ver mais?
       <label class="pointer">
-        <a href="mailto:email@example.com">Me mande um e-mail</a>
+        <a href="mailto:juliocesaar.ma@gmail.com">Me mande um e-mail</a>
       </label>
     </p>
     <div class="projects-cards flex">
