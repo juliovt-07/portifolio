@@ -2,7 +2,7 @@
   <div class="projects flex-column align-center">
     <h3>Projetos Recentes</h3>
     <p class="subtitle">
-      Aqui estão alguns projetos em que trabalhei recentemente. Quer ver mais?
+      Aqui estão alguns projetos que desenvolvi recentemente. Quer ver mais?
       <label class="pointer">
         <a href="mailto:juliocesaar.ma@gmail.com">Me mande um e-mail</a>
       </label>
