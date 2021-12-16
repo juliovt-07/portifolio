@@ -51,7 +51,24 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid var(--darker);  /* creates padding around scroll thumb */
 }
-
+.vue-custom-tooltip:after {
+  background: var(--darker) !important;
+  opacity: .95 !important;
+  font-family: 'Inria Sans', sans-serif !important;
+  border-radius: 5px !important;
+  margin-bottom: 3px;
+  max-width: 200px !important;
+}
+.vue-custom-tooltip:before {
+  display: none;
+}
+.vue-custom-tooltip:after,  {
+  transition: all .1s ease !important;
+}
+.vue-custom-tooltip.has-multiline:after {
+  color: var(--light);
+  max-width: 110px !important;
+}
 .content {
   min-height: 100vh;
   background-color: var(--bg);

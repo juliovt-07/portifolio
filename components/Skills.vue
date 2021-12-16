@@ -7,7 +7,11 @@
       </svg>
       <h3>UI Designer</h3>
       <div class="list flex-column align-center">
-        <p class="pointer" v-for="(item, index) in ui" :key="index">- {{ item.label }} -</p>
+        <p class="pointer" v-for="(item, index) in ui" :key="index">
+          <VueCustomTooltip multiline class="tooltip" :label="item.text">
+            - {{ item.label }} -
+          </VueCustomTooltip>
+        </p>
       </div>
     </div>
     <div class="line"/>
@@ -17,33 +21,42 @@
       </svg>
       <h3>Front-end</h3>
       <div class="list flex-column align-center">
-        <p class="pointer" v-for="(item, index) in front" :key="index">- {{ item.label }} -</p>
+        <p class="pointer" v-for="(item, index) in front" :key="index">
+          <VueCustomTooltip multiline class="tooltip" :label="item.text">
+            - {{ item.label }} -
+          </VueCustomTooltip>
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
+
 export default {
+  components: {
+    VueCustomTooltip
+  },
   data() {
     return {
       ui: [
-        { label: 'Figma', link: '' },
-        { label: 'Framer', link: '' },
-        { label: 'Adobe Xd', link: '' },
-        { label: 'Iconify', link: '' },
-        { label: 'Wireframe', link: '' },
-        { label: 'Design Thinking', link: '' },
-        { label: 'Style Guide', link: '' }
+        { label: 'Figma', text: 'Figma é um editor gráfico de vetor de projetos de design.' },
+        { label: 'Framer', text: 'Framer é uma ferramenta de prototipagem da experiência do produto.' },
+        { label: 'Adobe Xd', text: 'Adobe XD é uma ferramenta de design de experiência do usuário.' },
+        { label: 'Iconify', text: 'Iconify é uma estrutura de ícone de código aberto unificada.' },
+        { label: 'Wireframe', text: 'Wireframe é a ilustração simplificada do aspecto visual de um site.' },
+        { label: 'Design Thinking', text: 'Design thinking é um processo estratégico e prático com conceitos de design um projeto ou solução.' },
+        { label: 'Style Guide', text: 'Style Guide é a documentação visual de regras e padrões do projeto.' }
       ],
       front: [
-        { label: 'Vue', link: '' },
-        { label: 'Vuex', link: '' },
-        { label: 'Vuetify', link: '' },
-        { label: 'Nuxt', link: '' },
-        { label: 'Sass', link: '' },
-        { label: 'Bootstrap', link: '' },
-        { label: 'Axios', link: '' }
+        { label: 'Vue', text: 'Vue.js é um framework JavaScript open source para a criação de aplicações web' },
+        { label: 'Vuex', text: 'Vuex é um padrão de gerenciamento de estado + biblioteca para aplicações Vue.js.' },
+        { label: 'Vuetify', text: 'Vuetify é uma biblioteca de UI Vue com componentes de materiais lindamente feitos à mão.' },
+        { label: 'Nuxt', text: 'O Nuxt Js é um framework JavaScript que complementa a criação de aplicações Vue Js.' },
+        { label: 'Sass', text: 'SASS é uma linguagem de extensão do CSS, que significa "Syntactically Awesome Style Sheets" (Folhas de Estilo com uma Sintaxe Incrível).' },
+        { label: 'Bootstrap', text: 'Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas.' },
+        { label: 'Axios', text: 'Axios é um cliente HTTP baseado em Promises para fazer requisições.' }
       ]
     }
   }

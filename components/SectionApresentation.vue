@@ -6,13 +6,23 @@
       <h1 class="delay-06"> Prazer em te conhecer.</h1>
     </div>
     <div class="bio fadeIn delay-1">
-      Um Desenvolvedor aventureiro no mundo <span>UI/UX</span>, e entusiasmado por criar o mais agradável aos olhos e consoles.
+      Um Desenvolvedor aventureiro no mundo
+      <VueCustomTooltip class="tooltip" multiline label="UI: Design da parte visual de um site | UX: Navegação intuitiva, interativa e amigável.">
+        <span>UI/UX</span>
+      </VueCustomTooltip>
+      , e entusiasmado por criar o mais agradável aos olhos e consoles.
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
+
+export default {
+  components: {
+    VueCustomTooltip
+  },
+}
 </script>
 
 <style>
