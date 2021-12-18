@@ -2,14 +2,16 @@
   <div class="banner flex align-center justify-around">
     <h1>Começe um projeto</h1>
     <p>Interessado em trabalhar juntos? Devíamos colocar um bate-papo na fila. Vou comprar o café.</p>
-    <BtnDefault title="Vamos lá"/>
+    <BtnDefault title="Vamos lá" @event-btn="openModal()"/>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {}
+  methods: {
+    openModal() {
+      this.$emit('open-modal', true)
+    }
   }
 }
 </script>

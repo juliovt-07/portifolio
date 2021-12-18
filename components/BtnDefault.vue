@@ -1,8 +1,6 @@
 <template>
-	<div class="btn pointer">
-		<a href="https://wa.me/5599984738118?text=Ol%C3%A1%2C+cheguei+at%C3%A9+aqui+atrav%C3%A9s+do+seu+Site%2C+Gostaria+de+falar+sobre+um+projeto." target="_blank">		
-			{{ title }}
-		</a>
+	<div class="btn pointer" @click="eventBtn()">
+		{{ title }}
 	</div>
 </template>
 
@@ -13,6 +11,11 @@ export default {
 			type: String,
 			default: 'BtnDefault'
 		}
+	},
+	methods: {
+	    eventBtn() {
+	      this.$emit('event-btn')
+	    }
 	}
 }
 </script>

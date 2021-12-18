@@ -16,7 +16,7 @@
         <path d="M25.8125 3.6875C16.5938 3.6875 5.53125 12.9062 5.53125 27.6562C5.53125 42.4062 16.5938 53.4688 31.3438 53.4688C46.0938 53.4688 55.3125 42.4062 55.3125 33.1875C35.0312 46.0938 12.9062 23.9688 25.8125 3.6875Z" stroke="#FAFAFA" stroke-width="4.125" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
-    <BtnDefault class="btn-hello" title="Diga Olá"/>
+    <BtnDefault class="btn-hello" @event-btn="openModal()" title="Diga Olá"/>
   </div>
 </template>
 
@@ -43,6 +43,9 @@ export default {
       document.querySelector('.invisible').classList.remove('invisible')
       document.querySelector('.'+svg).classList.add('invisible')
       this.$emit('update-mode', mode[1])
+    },
+    openModal() {
+      this.$emit('open-modal', true)
     }
   }
 }

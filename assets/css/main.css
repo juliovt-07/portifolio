@@ -19,6 +19,7 @@
   --skills-border: rgba(64, 183, 130, 0.31);
   --h1: var(--primary);
   --social-media: var(--primary);
+  --modal-bg: var(--dark);
 }
 .light {
   --bg:  var(--light);
@@ -28,6 +29,7 @@
   --skills-border: rgba(81, 81, 81, 0.25);
   --h1: var(--secondary);
   --social-media: var(--light);
+  --modal-bg: var(--secondary);
 }
 
 * {
