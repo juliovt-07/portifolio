@@ -10,7 +10,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: "og:site_name", content: "SOU O JULIO" },
       { hid: "og:type", property: "og:type", content: "website" },
-      { name: "facebook-domain-verification", content: "8st76jqlgrbgljmnxzxiz8turxf1gm" },
       {
         hid: "og:url",
         property: "og:url",
@@ -71,16 +70,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-
-    'nuxt-facebook-pixel-module'
   ],
-  facebook: {
-    /* module options */
-    track: 'PageView',
-    pixelId: '326107552458641',
-    autoPageView: true,
-    disabled: false
-  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
