@@ -63,7 +63,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // Simple usage
-    ['nuxt-scss-to-js']
+    ['nuxt-scss-to-js'],
+    '@nuxtjs/web-vitals',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
