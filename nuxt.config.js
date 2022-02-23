@@ -35,7 +35,7 @@ export default {
       { name: 'author', content: 'Julio Cesar' },
       { name: 'copyright', content: '© 2021 Julio Cesar' },
       { name: 'rating', content: 'general' },
-      { name: 'keywords', content: 'front, end, julio, julio cesar, desenvolvedor, ui/ux, ui, ux, site, ladingpage, sites, web, design, web design' }
+      { name: 'keywords', content: 'front, end, julio, julio cesar, desenvolvedor, ui/ux, ui, ux, site, landingpage, sites, web, design, web design' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
