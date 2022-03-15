@@ -52,6 +52,10 @@ export default {
 </script>
 
 <style>
+.header {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .icon-mode {
   position: relative;
   height: 45px;
