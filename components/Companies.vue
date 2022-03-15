@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      companies: ['aggio', 'decole', 'inbolso', 'hubvet', 'overdrive']
+      companies: ['aggio', 'decole', 'inbolso', 'hubvet', 'overdrive', 'scm']
     }
   }
 }
