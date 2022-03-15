@@ -104,4 +104,9 @@ header {
 .section-delay {
   transition: all .8s ease-in-out;
 }
+@media screen and (min-height: 970px) {
+  .section-delay {
+    opacity: 1 !important;
+  }
+}
 </style>
